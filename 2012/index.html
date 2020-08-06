@@ -1,0 +1,102 @@
+<html>
+<head>
+
+<title>Marna Hoyt</title>
+
+<style type="text/css">
+body {
+	background-color: rgb( 43, 112, 154 );
+	background-image: url( water.jpg );
+	background-repeat: repeat;		
+}
+
+#cruise {
+	bottom: 50px;		
+	position: absolute;
+	right: 50px;
+}
+
+#shadow {
+	bottom: 0px;
+	left: 0px;
+	position: absolute;	
+	right: 0px;
+	top: 0px;
+	
+	/* Thanks ColorZilla! */
+	/* http://www.colorzilla.com/gradient-editor/ */
+	
+	/* FF3.6+ */
+	background: -moz-linear-gradient(
+		-45deg,  
+		rgba( 43, 126, 176, 0 ) 0%, 
+		rgba( 13, 58, 64, 0.40 ) 50%, 
+		rgba( 3, 45, 59, 0.90 ) 100% ); 
+
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(
+		linear, 
+		left top, right bottom, 
+		color-stop( 0%, rgba( 43, 126, 176, 0 ) ), 
+		color-stop( 50%, rgba( 13, 58, 64, 0.40 ) ), 
+		color-stop( 100%,rgba( 3, 45, 59, 0.90 ) ) ); 
+
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(
+		-45deg,  
+		rgba( 43, 126, 176, 0 ) 0%,
+		rgba( 13, 58, 64, 0.40 ) 50%,
+		rgba( 3, 45, 59, 0.90 ) 100% ); 
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(
+		-45deg,  
+		rgba( 43, 126, 176, 0 ) 0%,
+		rgba( 13, 58, 64, 0.40 ) 50%,
+		rgba( 3, 45, 59, 0.90 ) 100% ); 
+
+	/* IE10+ */
+	background: -ms-linear-gradient(
+		-45deg,  
+		rgba( 43, 126, 176, 0 ) 0%,
+		rgba( 13, 58, 64, 0.40 ) 50%,
+		rgba( 3, 45, 59, 0.90 ) 100% ); 
+
+	/* W3C */
+	background: linear-gradient(
+		135deg,  
+		rgba( 43, 126, 176, 0 ) 0%,
+		rgba( 13, 58, 64, 0.40 ) 50%,
+		rgba( 3, 45, 59, 0.90 ) 100% ); 
+
+	/* IE6-9 fallback on horizontal gradient */
+	filter: progid:DXImageTransform.Microsoft.gradient( 
+		startColorstr='#002b7eb0', 
+		endColorstr='#e6032d3b',
+		GradientType=1 ); 
+}
+
+#adventure {
+	background-color: #FFF;
+	border: 15px solid #FFF;
+	-moz-box-shadow:    4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );
+	-webkit-box-shadow: 4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );
+	box-shadow:         4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );	
+	left: 90px;
+	position: absolute;
+	top: 90px;
+	-moz-transform: rotate( -5deg );
+	-webkit-transform: rotate( -5deg );
+	transform: rotate( -5deg );	
+}
+</style>
+
+</head>
+<body>
+
+<div id="shadow"></div>
+<img id="cruise" src="cruise.png" width="400" height="200">
+<img id="adventure" src="cruise-ship-small.jpg" width="450" height="338">
+
+</body>
+</html>
