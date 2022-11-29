@@ -7,98 +7,61 @@
 
 <style type="text/css">
 body {
-	background-color: rgb( 43, 112, 154 );
-	background-image: url( water.jpg );
-	background-repeat: repeat;		
+	background-image: url( troll-small.jpeg );
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-#cruise {
-	bottom: 50px;		
+a {
+	color: rgba( 255, 255, 255, 0.80 );
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 24px;	
+	text-decoration: none;
+	text-shadow: 0 0 4px #000000;
+}
+
+img {
+	background-color: #ffffff;
+	border: 15px solid #ffffff;
+	bottom: 50px;
+	box-shadow: 4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );	
 	position: absolute;
 	right: 50px;
+	transform: rotate( 5deg );	
 }
 
-#shadow {
-	bottom: 0px;
-	left: 0px;
-	position: absolute;	
-	right: 0px;
-	top: 0px;
-	
-	/* Thanks ColorZilla! */
-	/* http://www.colorzilla.com/gradient-editor/ */
-	
-	/* FF3.6+ */
-	background: -moz-linear-gradient(
-		-45deg,  
-		rgba( 43, 126, 176, 0 ) 0%, 
-		rgba( 13, 58, 64, 0.40 ) 50%, 
-		rgba( 3, 45, 59, 0.90 ) 100% ); 
-
-	/* Chrome,Safari4+ */
-	background: -webkit-gradient(
-		linear, 
-		left top, right bottom, 
-		color-stop( 0%, rgba( 43, 126, 176, 0 ) ), 
-		color-stop( 50%, rgba( 13, 58, 64, 0.40 ) ), 
-		color-stop( 100%,rgba( 3, 45, 59, 0.90 ) ) ); 
-
-	/* Chrome10+,Safari5.1+ */
-	background: -webkit-linear-gradient(
-		-45deg,  
-		rgba( 43, 126, 176, 0 ) 0%,
-		rgba( 13, 58, 64, 0.40 ) 50%,
-		rgba( 3, 45, 59, 0.90 ) 100% ); 
-
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(
-		-45deg,  
-		rgba( 43, 126, 176, 0 ) 0%,
-		rgba( 13, 58, 64, 0.40 ) 50%,
-		rgba( 3, 45, 59, 0.90 ) 100% ); 
-
-	/* IE10+ */
-	background: -ms-linear-gradient(
-		-45deg,  
-		rgba( 43, 126, 176, 0 ) 0%,
-		rgba( 13, 58, 64, 0.40 ) 50%,
-		rgba( 3, 45, 59, 0.90 ) 100% ); 
-
-	/* W3C */
-	background: linear-gradient(
-		135deg,  
-		rgba( 43, 126, 176, 0 ) 0%,
-		rgba( 13, 58, 64, 0.40 ) 50%,
-		rgba( 3, 45, 59, 0.90 ) 100% ); 
-
-	/* IE6-9 fallback on horizontal gradient */
-	filter: progid:DXImageTransform.Microsoft.gradient( 
-		startColorstr='#002b7eb0', 
-		endColorstr='#e6032d3b',
-		GradientType=1 ); 
-}
-
-#adventure {
-	background-color: #FFF;
-	border: 15px solid #FFF;
-	-moz-box-shadow:    4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );
-	-webkit-box-shadow: 4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );
-	box-shadow:         4px 4px 8px 8px rgba( 0, 0, 0, 0.15 );	
-	left: 90px;
+ul {
+	bottom: 25px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	left: 25px;	
+	list-style-type: none;
 	position: absolute;
-	top: 90px;
-	-moz-transform: rotate( -5deg );
-	-webkit-transform: rotate( -5deg );
-	transform: rotate( -5deg );	
+}
+
+li {
+	background-color: rgba( 0, 0, 0, 0.40 );
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 8px 24px 8px 24px;
+}
+
+li:hover {
+	background-color: rgba( 0, 0, 0, 0.60 );
 }
 </style>
 
 </head>
 <body>
 
-<div id="shadow"></div>
-<img id="cruise" src="cruise.png" width="400" height="200">
-<img id="adventure" src="cruise-ship-small.jpg" width="450" height="338">
+<img src="marna-small.jpeg" height="350" />
+<ul>
+	<li><a href="/2011">2011</a></li>
+	<li><a href="/2012">2012</a></li>	
+</ul>
 
 </body>
 </html>
