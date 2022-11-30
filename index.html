@@ -64,7 +64,7 @@ li:hover {
 	background-color: rgba( 0, 0, 0, 0.60 );
 }
 
-@media ( max-width: 450px ) {
+@media ( orientation: portrait ) {
 	body {
 		background-image: url( troll-portrait-small.jpeg );
 	}
@@ -87,6 +87,19 @@ li:hover {
 	}
 }
 
+@media ( max-height: 400px ) and ( orientation: landscape ) {
+	body {
+		background-position: center -50px;
+	}
+	
+	img {
+		border: 10px solid #ffffff;				
+		height: 250px;
+		right: 100px;
+		top: 50vh;
+		transform: rotate( 5deg ) translateY( -60% );		
+	}
+}
 </style>
 
 </head>
